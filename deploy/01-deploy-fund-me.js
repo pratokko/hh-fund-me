@@ -10,7 +10,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
     let ethUsdPriceFeedAddress
     if (developmentChains.includes(network.name)) {
-        log("deploying Mocks")
+        log('deploying Mocks')
         const ethUsdAggregator = await deployments.get("MockV3Aggregator")
         ethUsdPriceFeedAddress = ethUsdAggregator.address
     } else {
@@ -35,4 +35,4 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     log("==========================================================")
 }
 
-module.exports.tags = ["all", "fundMe"]
+module.exports.tags = ["all", "fundme"]

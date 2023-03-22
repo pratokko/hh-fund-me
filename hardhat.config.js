@@ -33,18 +33,19 @@ module.exports = {
 
     // solidity: "0.8.8",
     solidity: {
-        compilers: [{ version: "0.8.8" }, { version: "0.6.6" }],
+        compilers: [{ version: "0.8.7" }, { version: "0.6.6" }],
     },
 
     etherscan: {
         apiKey: ETHERSCAN_API_KEY,
     },
     gasReporter: {
-        enabled: false,
+        enabled: true,
         outputFile: "gas-report.txt",
         noColors: true,
         currency: "USD",
-        coinmarketcap: COIN_MARKET_CAP,
+        // coinmarketcap: COIN_MARKET_CAP,
+        token: "MATIC",
     },
 
     namedAccounts: {
