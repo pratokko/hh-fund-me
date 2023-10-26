@@ -11,3 +11,4 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+This project is also availabe in foundry while using it be sure not to introduce any vulnerabilities  will be here to help incase you need some help in your projects
